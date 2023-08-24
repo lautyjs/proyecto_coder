@@ -1,24 +1,117 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     background-color: orange;
+}
+
+.const{
+padding: 10%;
 }
 
 .navbar{
     margin-top: 20px;
     height: 80px;
+    flex-wrap: nowrap;
 }
 
+
 .navbar-brand img{
-    height: 60px;
+    height: 120px;
+    margin-top: 50px;
+    background-color: #212529;
+    border-radius: 0 0 5% 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 .nav-link{
     color: white !important;
 }
+ 
+.carousel{
+    padding: 5%;
+    padding-top: 50px;
+    border-radius: 5% !important;
+}
 
-@media only screen and (min-width:0) and (max-width:576px) {
-    .navbar-collapse{
-        width: 20px !important;
-        border: solid black 2px
-    }
+.carousel img{
+    height: 30rem;
+
+    border-radius: 5%;
+}
+
+main{
+    text-align: center;
+}
+
+.titulo{
+    padding: 10px;
+}
+
+main img{
+    border-radius: 10%;
+
+}
+
+main a{
+    text-decoration: none;
+}
+
+.services{
+    margin-top: 50px;
+    max-width: 90vw;
+}
+
+.modulo{
+    padding: 5px;
+    justify-items: center;
+    
+}
+
+
+
+footer{
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: azure;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+footer a{
+    color: springgreen;
+}
+
+footer i{
+    font-size: 35px;
+    letter-spacing: 15px;
+}
+
+footer .redes{
+    margin-top: 20px;
+}
+
+
+.what{
+    height: 60px;
+    width: 60px;
+    background-color: springgreen;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    border: 2px solid #fff;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #333;
+
 }
