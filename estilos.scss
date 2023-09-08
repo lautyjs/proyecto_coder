@@ -1,0 +1,212 @@
+
+@mixin centrar{
+    display: flex !important;
+    margin: auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+$fonttitulo: 'Poppins', sans-serif;
+
+    
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: #212529;
+}
+
+
+
+body{
+    background-color: orange;
+}
+
+.navbar{
+    margin: 0;
+}
+.navbar{
+    @include centrar
+}
+
+.logo{
+    @include centrar
+}
+
+.logo a{
+    @include centrar
+}
+
+.hamb{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.hamburguer{
+    display: flex !important;
+    justify-content:  space-between !important;
+}
+
+.hamburguer i{
+    font-size: 30px;
+    color: white;
+    margin: 8px;
+}
+
+.navbar-brand img{
+    height: 120px;
+    background-color: #212529;
+    border-radius: 0 0 5% 5%;
+}
+
+.nav-link{
+    color: white !important;
+}
+ 
+.carousel{
+    padding: 5%;
+    padding-top: 50px;
+    border-radius: 5% !important;
+}
+
+.carousel img{
+    height: 30rem;
+    border-radius: 5%;
+}
+
+main{
+    text-align: center;
+}
+
+.titulo{
+    font-family: $fonttitulo;
+    font-size: 50px;
+}
+
+main img{
+    border-radius: 1%;
+
+}
+
+main a{
+    text-decoration: none;
+}
+
+.services{
+    max-width: 90vw;
+    margin-top: 10px;
+}
+
+.products{
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 90%;
+}
+
+.modulo h3{
+    @include centrar;
+}
+
+.modulo h3 a{
+    margin: 5px;
+}
+
+.modulo{
+    padding: 10px;
+    justify-items: center;
+    transition: 1s;
+    border-radius: 10%;
+}
+
+.modulo:hover{
+    scale: 1.05
+}
+
+.modulo button{
+    background-color: rgba(128, 128, 128, 0.271);
+    border: none;
+    border-radius: 30%;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    box-shadow: 1px 1px 5px rgb(88, 88, 88);
+    margin-top: 5px;
+}
+
+.modulo button i{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+}
+
+.cont{
+    text-align: center;
+    margin: 10px;
+}
+
+.contacto{
+    font-family: $fonttitulo;
+    text-transform: uppercase;
+}
+
+.mapa{
+    max-width: 650px;
+    max-height: 650px;
+    width: 95vw;
+    height: 95vw;
+    border-radius: 5px;
+    @include  centrar
+}
+
+footer{
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: azure;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+footer a{
+    color: springgreen;
+}
+
+footer i{
+    font-size: 35px;
+    letter-spacing: 15px;
+}
+
+footer .redes{
+    margin-top: 20px;
+}
+
+
+.what{
+    height: 60px;
+    width: 60px;
+    background-color: springgreen;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    border: 2px solid #fff;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #333;
+
+}
+
+

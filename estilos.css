@@ -1,117 +1,207 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    background-color: orange;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.const{
-padding: 10%;
+a {
+  text-decoration: none;
+  color: #212529;
 }
 
-.navbar{
-    margin-top: 20px;
-    height: 80px;
-    flex-wrap: nowrap;
+body {
+  background-color: orange;
 }
 
-
-.navbar-brand img{
-    height: 120px;
-    margin-top: 50px;
-    background-color: #212529;
-    border-radius: 0 0 5% 5%;
-    padding-left: 10px;
-    padding-right: 10px;
-
+.navbar {
+  margin: 0;
 }
 
-.nav-link{
-    color: white !important;
-}
- 
-.carousel{
-    padding: 5%;
-    padding-top: 50px;
-    border-radius: 5% !important;
+.navbar {
+  display: flex !important;
+  margin: auto !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-.carousel img{
-    height: 30rem;
-
-    border-radius: 5%;
+.logo {
+  display: flex !important;
+  margin: auto !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-main{
-    text-align: center;
+.logo a {
+  display: flex !important;
+  margin: auto !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-.titulo{
-    padding: 10px;
+.hamb {
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
-main img{
-    border-radius: 10%;
-
+.hamburguer {
+  display: flex !important;
+  justify-content: space-between !important;
 }
 
-main a{
-    text-decoration: none;
+.hamburguer i {
+  font-size: 30px;
+  color: white;
+  margin: 8px;
 }
 
-.services{
-    margin-top: 50px;
-    max-width: 90vw;
+.navbar-brand img {
+  height: 120px;
+  background-color: #212529;
+  border-radius: 0 0 5% 5%;
 }
 
-.modulo{
-    padding: 5px;
-    justify-items: center;
-    
+.nav-link {
+  color: white !important;
 }
 
-
-
-footer{
-    padding: 15px;
-    text-align: center;
-    background-color: black;
-    color: azure;
+.carousel {
+  padding: 5%;
+  padding-top: 50px;
+  border-radius: 5% !important;
 }
 
-footer p{
-    font-size: 20px;
+.carousel img {
+  height: 30rem;
+  border-radius: 5%;
 }
 
-footer a{
-    color: springgreen;
+main {
+  text-align: center;
 }
 
-footer i{
-    font-size: 35px;
-    letter-spacing: 15px;
+.titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
 }
 
-footer .redes{
-    margin-top: 20px;
+main img {
+  border-radius: 1%;
 }
 
-
-.what{
-    height: 60px;
-    width: 60px;
-    background-color: springgreen;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 40px;
-    border: 2px solid #fff;
-    display: grid;
-    place-content: center;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px #333;
-
+main a {
+  text-decoration: none;
 }
+
+.services {
+  max-width: 90vw;
+  margin-top: 10px;
+}
+
+.products {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 90%;
+}
+
+.modulo h3 {
+  display: flex !important;
+  margin: auto !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.modulo h3 a {
+  margin: 5px;
+}
+
+.modulo {
+  padding: 10px;
+  justify-items: center;
+  transition: 1s;
+  border-radius: 10%;
+}
+
+.modulo:hover {
+  scale: 1.05;
+}
+
+.modulo button {
+  background-color: rgba(128, 128, 128, 0.271);
+  border: none;
+  border-radius: 30%;
+  font-size: 30px;
+  width: 35px;
+  height: 35px;
+  box-shadow: 1px 1px 5px rgb(88, 88, 88);
+  margin-top: 5px;
+}
+
+.modulo button i {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.cont {
+  text-align: center;
+  margin: 10px;
+}
+
+.contacto {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.mapa {
+  max-width: 650px;
+  max-height: 650px;
+  width: 95vw;
+  height: 95vw;
+  border-radius: 5px;
+  display: flex !important;
+  margin: auto !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+  background-color: black;
+  color: azure;
+}
+
+footer p {
+  font-size: 20px;
+}
+
+footer a {
+  color: springgreen;
+}
+
+footer i {
+  font-size: 35px;
+  letter-spacing: 15px;
+}
+
+footer .redes {
+  margin-top: 20px;
+}
+
+.what {
+  height: 60px;
+  width: 60px;
+  background-color: springgreen;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  border: 2px solid #fff;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #333;
+}
+
+/*# sourceMappingURL=estilos.css.map */
