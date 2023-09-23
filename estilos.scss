@@ -8,6 +8,8 @@
 
 
 $fonttitulo: 'Poppins', sans-serif;
+$fontproducts: 'Oswald', sans-serif;
+$fonttitulares: 'Caveat';
 
     
 *{
@@ -29,11 +31,10 @@ body{
     background-color: orange;
 }
 
-.navbar{
-    margin: 0;
-}
-.navbar{
-    @include centrar
+.navbar{    
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 .logo{
@@ -42,6 +43,12 @@ body{
 
 .logo a{
     @include centrar
+}
+ 
+.titulo{
+    font-family: $fonttitulares;
+    font-style: oblique !important;
+    font-size: 70px;
 }
 
 .hamb{
@@ -55,10 +62,15 @@ body{
     justify-content:  space-between !important;
 }
 
-.hamburguer i{
+.navbar i{
     font-size: 30px;
     color: white;
-    margin: 8px;
+    padding: 2px;
+    padding-right: 8px;
+    position: absolute;
+    top: 12px;
+    max-height: 1px !important;
+
 }
 
 .navbar-brand img{
@@ -71,25 +83,31 @@ body{
     color: white !important;
 }
  
+
+
+.carru{
+    background-color: #5a5a5a71 !important;
+    width: 100vw !important;
+    display: flex !important;
+    margin: auto !important;
+}
+
+
 .carousel{
-    padding: 5%;
     padding-top: 50px;
-    border-radius: 5% !important;
+    margin-bottom: 5%;
 }
 
 .carousel img{
     height: 30rem;
-    border-radius: 5%;
+    width: 90vw !important;
+    @include centrar
 }
 
 main{
     text-align: center;
 }
 
-.titulo{
-    font-family: $fonttitulo;
-    font-size: 50px;
-}
 
 main img{
     border-radius: 1%;
@@ -108,10 +126,12 @@ main a{
 .products{
     background-color: rgba(255, 255, 255, 0.2);
     height: 90%;
+    font-family: $fontproducts;
+    margin-bottom: 10px;
 }
 
-.modulo h3{
-    @include centrar;
+.h3{
+    display: grid;
 }
 
 .modulo h3 a{
@@ -125,17 +145,33 @@ main a{
     border-radius: 10%;
 }
 
+.specs{
+    @include centrar;
+    text-transform: uppercase;
+    padding-left:40px ;
+    justify-content: space-around !important;
+}
+
+.h3 span{
+    background: rgba(251, 251, 251, 0.119);
+    border: #333;
+    box-shadow: 2px 2px 5px #333;
+    border-radius:5px;
+}
+
+
+
 .modulo:hover{
     scale: 1.05
 }
 
 .modulo button{
-    background-color: rgba(128, 128, 128, 0.271);
+    background: radial-gradient(circle, rgba(251,233,63,1) 0%, rgba(252,161,70,1) 100%);
     border: none;
     border-radius: 30%;
-    font-size: 30px;
-    width: 35px;
-    height: 35px;
+    font-size: 40px;
+    width: 45px;
+    height: 45px;
     box-shadow: 1px 1px 5px rgb(88, 88, 88);
     margin-top: 5px;
 }
@@ -149,27 +185,82 @@ main a{
 
 .cont{
     text-align: center;
-    margin: 10px;
+
 }
 
-.contacto{
-    font-family: $fonttitulo;
+.contacto h1{
+    font-family: $fonttitulares;
     text-transform: uppercase;
+    font-style: oblique;
 }
 
 .mapa{
-    max-width: 650px;
-    max-height: 650px;
-    width: 95vw;
-    height: 95vw;
+    width: 90vw;
+    height: 90vw;
     border-radius: 5px;
-    @include  centrar
+    @include  centrar;
+    padding-bottom:10px
+}
+
+.contac{
+    padding-bottom: 10px;
+    font-family: $fonttitulo;
+}
+
+.contacto h1{
+    font-size: 60px;
+    padding: 15px;
+
+}
+
+.contacto h2{
+    background-color: #6c6a6a4f;
+    box-shadow: 2px 2px 5px #333;
+    display: inline-block !important;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contacto h3{
+    text-decoration: underline black;
+}
+
+.datos{
+    display: inline-block !important;
+    align-self: center;
+    justify-self: center;
+}
+
+.aviso{
+
+}
+
+/*nosotros*/
+
+.imgtrabajos{
+    padding: 2px;
+}
+
+.imgtrabajos img{
+    width: 95vw;
+}
+
+.img1{
+    animation-delay: 0.5s
+}
+
+.img2{
+    animation-delay: 1.5s;
+}
+
+.img3{
+    animation-delay: 2.5s;
 }
 
 footer{
     padding: 15px;
     text-align: center;
-    background-color: black;
+    background-color: #212529;
     color: azure;
 }
 
@@ -178,7 +269,11 @@ footer p{
 }
 
 footer a{
-    color: springgreen;
+    color: orange;
+}
+
+footer a :hover{
+    color: white;
 }
 
 footer i{
@@ -209,4 +304,17 @@ footer .redes{
 
 }
 
+@media (min-width: 578px){
+    .navbar i{
+        top: 12px;
+        margin-right: 3px;
+    }
+}
 
+@media (min-width: 750px){
+    .mapa{
+        width: 45vw;
+        height: 45vw;
+
+    }
+}

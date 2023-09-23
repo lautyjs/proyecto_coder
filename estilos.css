@@ -13,14 +13,8 @@ body {
 }
 
 .navbar {
-  margin: 0;
-}
-
-.navbar {
-  display: flex !important;
-  margin: auto !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logo {
@@ -37,6 +31,12 @@ body {
   justify-content: center !important;
 }
 
+.titulo {
+  font-family: "Caveat";
+  font-style: oblique !important;
+  font-size: 70px;
+}
+
 .hamb {
   justify-content: center !important;
   align-items: center !important;
@@ -48,10 +48,14 @@ body {
   justify-content: space-between !important;
 }
 
-.hamburguer i {
+.navbar i {
   font-size: 30px;
   color: white;
-  margin: 8px;
+  padding: 2px;
+  padding-right: 8px;
+  position: absolute;
+  top: 12px;
+  max-height: 1px !important;
 }
 
 .navbar-brand img {
@@ -64,24 +68,29 @@ body {
   color: white !important;
 }
 
+.carru {
+  background-color: rgba(90, 90, 90, 0.4431372549) !important;
+  width: 100vw !important;
+  display: flex !important;
+  margin: auto !important;
+}
+
 .carousel {
-  padding: 5%;
   padding-top: 50px;
-  border-radius: 5% !important;
+  margin-bottom: 5%;
 }
 
 .carousel img {
   height: 30rem;
-  border-radius: 5%;
+  width: 90vw !important;
+  display: flex !important;
+  margin: auto !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 main {
   text-align: center;
-}
-
-.titulo {
-  font-family: "Poppins", sans-serif;
-  font-size: 50px;
 }
 
 main img {
@@ -100,13 +109,12 @@ main a {
 .products {
   background-color: rgba(255, 255, 255, 0.2);
   height: 90%;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 10px;
 }
 
-.modulo h3 {
-  display: flex !important;
-  margin: auto !important;
-  align-items: center !important;
-  justify-content: center !important;
+.h3 {
+  display: grid;
 }
 
 .modulo h3 a {
@@ -120,17 +128,34 @@ main a {
   border-radius: 10%;
 }
 
+.specs {
+  display: flex !important;
+  margin: auto !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-transform: uppercase;
+  padding-left: 40px;
+  justify-content: space-around !important;
+}
+
+.h3 span {
+  background: rgba(251, 251, 251, 0.119);
+  border: #333;
+  box-shadow: 2px 2px 5px #333;
+  border-radius: 5px;
+}
+
 .modulo:hover {
   scale: 1.05;
 }
 
 .modulo button {
-  background-color: rgba(128, 128, 128, 0.271);
+  background: radial-gradient(circle, rgb(251, 233, 63) 0%, rgb(252, 161, 70) 100%);
   border: none;
   border-radius: 30%;
-  font-size: 30px;
-  width: 35px;
-  height: 35px;
+  font-size: 40px;
+  width: 45px;
+  height: 45px;
   box-shadow: 1px 1px 5px rgb(88, 88, 88);
   margin-top: 5px;
 }
@@ -143,30 +168,79 @@ main a {
 
 .cont {
   text-align: center;
-  margin: 10px;
 }
 
-.contacto {
-  font-family: "Poppins", sans-serif;
+.contacto h1 {
+  font-family: "Caveat";
   text-transform: uppercase;
+  font-style: oblique;
 }
 
 .mapa {
-  max-width: 650px;
-  max-height: 650px;
-  width: 95vw;
-  height: 95vw;
+  width: 90vw;
+  height: 90vw;
   border-radius: 5px;
   display: flex !important;
   margin: auto !important;
   align-items: center !important;
   justify-content: center !important;
+  padding-bottom: 10px;
+}
+
+.contac {
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contacto h1 {
+  font-size: 60px;
+  padding: 15px;
+}
+
+.contacto h2 {
+  background-color: rgba(108, 106, 106, 0.3098039216);
+  box-shadow: 2px 2px 5px #333;
+  display: inline-block !important;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contacto h3 {
+  -webkit-text-decoration: underline black;
+          text-decoration: underline black;
+}
+
+.datos {
+  display: inline-block !important;
+  align-self: center;
+  justify-self: center;
+}
+
+/*nosotros*/
+.imgtrabajos {
+  padding: 2px;
+}
+
+.imgtrabajos img {
+  width: 95vw;
+}
+
+.img1 {
+  animation-delay: 0.5s;
+}
+
+.img2 {
+  animation-delay: 1.5s;
+}
+
+.img3 {
+  animation-delay: 2.5s;
 }
 
 footer {
   padding: 15px;
   text-align: center;
-  background-color: black;
+  background-color: #212529;
   color: azure;
 }
 
@@ -175,7 +249,11 @@ footer p {
 }
 
 footer a {
-  color: springgreen;
+  color: orange;
+}
+
+footer a :hover {
+  color: white;
 }
 
 footer i {
@@ -204,4 +282,15 @@ footer .redes {
   box-shadow: 2px 2px 5px #333;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+@media (min-width: 578px) {
+  .navbar i {
+    top: 12px;
+    margin-right: 3px;
+  }
+}
+@media (min-width: 750px) {
+  .mapa {
+    width: 45vw;
+    height: 45vw;
+  }
+}/*# sourceMappingURL=estilos.css.map */

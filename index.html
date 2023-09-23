@@ -8,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>INICIO EL GRINGO</title>
 </head>
 <body>
 <!--NAVBAR COMIENZO-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-flui logo">
-    <a class="navbar-brand" href="index.html">
+  <div class="container-fluid logo">
+    <a class="navbar-brand imglogo" href="index.html">
       <img src="images/Logo Ferreteria.png" alt="Avatar Logo" class=""> 
     </a>
   </div>
@@ -43,8 +44,8 @@
         </li>
       </ul>
     </div>
-    <i class="fa-solid fa-cart-shopping"></i>
   </div>
+  <i class="carrito fa-solid fa-cart-shopping"></i>
 </nav>
 <!--NAVBAR FIN-->
 
@@ -59,15 +60,15 @@
   </div>
 
   <!-- The slideshow/carousel -->
-  <div class="carousel-inner ">
-    <div class="carousel-item active">
-      <img src="images/amoladora.jpg" alt="Los Angeles" class="d-block w-100">
+  <div class="carousel-inner carru">
+    <div class="carousel-item imgcarru active">
+      <img src="images/amoladora.jpg" alt="Los Angeles" class="">
     </div>
-    <div class="carousel-item">
-      <img src="images/lijadora.jpg" alt="Chicago" class="d-block w-100">
+    <div class="carousel-item imgcarru">
+      <img src="images/lijadora.jpg" alt="Chicago" class="">
     </div>
-    <div class="carousel-item">
-      <img src="images/taladro.jpg" alt="New York" class="d-block w-100">
+    <div class="carousel-item imgcarru">
+      <img src="images/taladro.jpg" alt="New York" class="">
     </div>
   </div>
 
@@ -107,5 +108,9 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <!--fin bootsrap-->
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </body>
 </html>
